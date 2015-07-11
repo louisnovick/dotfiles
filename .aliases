@@ -18,6 +18,7 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias pro="cd ~/Desktop/Work/Projects"
+alias lou="cd ~/Desktop/louisnovick.github.io"
 
 # Enable aliases to be sudo’ed
 
@@ -51,8 +52,6 @@ alias bwu='bower update'
 alias be='bundle exec'
 
 # ----- Git ----- #
-
-alias git='hub'
 
 alias g='git'
 alias ga='git add'
