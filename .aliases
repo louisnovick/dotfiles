@@ -1,0 +1,151 @@
+# ****************************************************
+#
+#   Aliases
+#   -> Shorthand commands
+#
+# ****************************************************
+
+# ----------------------------------------------------
+#   Shell
+# ----------------------------------------------------
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias pro="cd ~/Desktop/Work/Projects"
+
+# Enable aliases to be sudo’ed
+
+alias sudo='sudo '
+
+# ----- Bash ----- #
+
+alias reload='bash -l'
+
+# ----- Clear ----- #
+
+alias c='clear'
+
+# ----- Finder ----- #
+
+alias browse='open -a "Google Chrome" .'
+alias here='open .'
+
+# ----- Bower ----- #
+
+alias bw='bower'
+alias bwi='bower install'
+alias bwis='bower install --save'
+alias bwisd='bower install --save-dev'
+alias bwp='bower prune'
+alias bws='bower search'
+alias bwu='bower update'
+
+# ----- Bundler ----- #
+
+alias be='bundle exec'
+
+# ----- Git ----- #
+
+alias git='hub'
+
+alias g='git'
+alias ga='git add'
+alias gac='git add --all && git commit --verbose'
+alias gap='git add --patch'
+alias ga.='git add --all'
+alias gb='git branch'
+alias gba='git branch --all'
+alias gbd='git branch --delete'
+alias gbD='git branch -D'
+alias gbm='git branch --move'
+alias gbr='git branch --remotes'
+alias gc='git commit --verbose'
+alias gca='git commit --amend'
+alias gcn='git commit'
+alias gcl='git clean -d --force --interactive'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gfp='git fetch --prune'
+alias gg='git log --pretty=format:"%C(red)%h%Creset %s %C(magenta)(%cr)" --date=relative -5'
+alias gga='git log --pretty=format:"%C(red)%h%Creset %s %C(magenta)(%cr)" --date=relative'
+alias ggl='git log --pretty=format:"%C(red)%h%Creset %s %C(magenta)(%cr)" --date=relative -1 --patch'
+alias ggo='git log --oneline --stat -5'
+alias ggp='git log --pretty=format:"%C(red)%h%Creset %s %C(magenta)(%cr)" --date=relative -5 --patch'
+alias gk='git clone'
+alias gl='git pull --rebase'
+alias glp='git pull --rebase && git push'
+alias gm='git merge'
+alias gmf='git merge --no-ff'
+alias gmm='git merge master'
+alias gmt='git mergetool'
+alias go='git checkout'
+alias gob='git checkout -b'
+alias goH='git checkout HEAD .'
+alias gom='git checkout master'
+alias gp='git push'
+alias gpb='git push --set-upstream origin'
+alias gpbc='git push --set-upstream origin $(parse_git_branch)'
+alias gpbD='git push origin --delete'
+alias gpt='git push --tags'
+alias gr='git reset'
+alias grs='git_reset_soft'
+alias grb='git rebase --interactive HEAD~$(( $(git log --oneline -11 | wc -l) - 1 ))'
+alias gs='git status --short --branch'
+alias gsu='git status --short --branch | grep "U\|orig"'
+alias gsl='git status'
+alias gsmu='git submodule foreach git pull'
+alias gst='git add . && git stash'
+alias gsti='git stash --patch'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gtl='git tag --list'
+alias 'g?'='git help'
+
+# ----- Middleman ----- #
+
+alias mm='bundle exec middleman'
+alias mmb='bundle exec middleman build'
+
+# ----- Node ----- #
+
+alias n='node'
+
+# NPM
+
+alias nD='rm -rf node_modules/'
+alias ngi='npm --global install'
+alias ni='npm install'
+alias nis='npm install --save'
+alias nisd='npm install --save-dev'
+alias np='npm prune'
+alias ns='npm start'
+alias nu='npm uninstall'
+
+# Show/hide hidden files in Finder
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Random
+
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume 7'"
+
+# Kill all the tabs in Chrome to free up memory
+
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# Lock the screen (when going AFK)
+
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

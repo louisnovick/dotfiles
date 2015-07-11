@@ -2,6 +2,8 @@
 *.swp
 
 # Package Control
+sublime/User/*
+sublime/User/Package Control*
 
 # Installed Packages
 sublime/User/sftp_servers/
