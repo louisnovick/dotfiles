@@ -9,7 +9,7 @@ Symlinks
 ### Sublime Text
 
 ```shell
-ln -s ~/.dotfiles/sublime/User/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/dotfiles/sublime/User/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ```
 
 Sources
@@ -18,7 +18,9 @@ Sources
 Based on the dotfiles of:
 
 - [John D. Jameson][john]
+- [Mathias Bynens][mathias]
 
 
 
 [john]: https://github.com/johndjameson/dotfiles
+[mathias]: https://github.com/mathiasbynens/dotfiles
