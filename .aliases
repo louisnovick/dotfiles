@@ -27,6 +27,7 @@ alias sudo='sudo '
 # ----- Bash ----- #
 
 alias reload='bash -l'
+alias la='ls -la'
 
 # ----- Clear ----- #
 
