@@ -8,7 +8,7 @@ Symlinks
 
 ### Symlink the .files
 
-This will remove current dotfiles (specified in the symlinks.sh file) and move them into ~/dotfile_old.  It will then create symlinks to the .files in your ~/dotfiles that you specified.
+This will remove dotfiles (specified in the symlinks.sh file) from ~/ and move them into ~/dotfiles_old.  It will then create symlinks to the .files in ~/dotfiles.
 
 ```shell
 sh symlinks.sh
