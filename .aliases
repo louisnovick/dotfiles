@@ -18,6 +18,7 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias pro="cd ~/Desktop/Work/Projects"
+alias dev="cd ~/dev"
 alias lou="cd ~/Desktop/louisnovick.github.io"
 
 # Enable aliases to be sudo’ed
