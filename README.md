@@ -6,6 +6,14 @@ Some configuration I'm attempting to keep organized.
 Symlinks
 --------
 
+### Symlink the .files
+
+This will remove dotfiles (specified in the symlinks.sh file) from ~/ and move them into ~/dotfiles_old.  It will then create symlinks to the .files in ~/dotfiles.
+
+```shell
+sh symlinks.sh
+```
+
 ### Sublime Text
 
 ```shell
