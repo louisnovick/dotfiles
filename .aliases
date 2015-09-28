@@ -113,6 +113,10 @@ alias 'g?'='git help'
 alias mm='bundle exec middleman'
 alias mmb='bundle exec middleman build'
 
+# ----- Webpack ----- #
+
+alias wps='webpack-dev-server --progress --colors'
+
 # ----- Node ----- #
 
 alias n='node'
